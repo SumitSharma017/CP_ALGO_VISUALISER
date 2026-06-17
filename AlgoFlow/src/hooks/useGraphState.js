@@ -32,7 +32,7 @@ export function useGraphState(weighted, directed) {
     setGraph({ nodes, edges });
   }, [nodeCount, weighted, directed]);
 
-  useEffect(() => { regen(); }, [nodeCount]); // eslint-disable-line
+  useEffect(() => { regen(); }, [nodeCount]);
 
   return { graph, setGraph, nodeCount, setNodeCount, regen };
 }
